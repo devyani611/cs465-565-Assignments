@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .center {
+                background-color: white;
+                margin: auto;
+                width: 20%;
+                border: 1px solid #cecece;
+                padding: 1em; ; 
+                font-family: "Helvetica";
+                color: navy;
+                    }
+            .linear{
+                background: linear-gradient(to right, rgb(10,180,10), rgb(250,250,20));
+                    }
+
+            .button {
+                background-color: navy; /* Green */
+                border: none;
+                color: white;
+                padding: 8px 15px;
+                text-align: center;;
+                display: inline-block;
+                font-family: Helvetica;
+                font-size: 0.7em;
+                cursor: pointer;
+                margin-top: 15px;
+                margin-left: 30px; 
+                    }
+            .button1:hover {
+                background-color: lightgreen;
+                color: navy;
+                    }
+        </style>
+    </head>
+
+<body class="linear">
+   <div class= "center">
+    
+    <h4 align= "center"> CONTACT US</h4>
+<form>
+  <input type="text" name="fname" placeholder="Name" size= "39" style= "padding: 10px; border:1px solid #cecece; font-family: Helvetica; font-size: 11px; color:#cecece"><br>
+  <br>
+  <input type="text" name="lname" placeholder="Email" size= "39" style= "padding: 10px; border: 1px solid #cecece; font-family: Helvetica; font-size: 11px; color:#cecece"><br>
+  <br>
+  <textarea rows="6" cols="30" name="comment" form="usrform" style= "border: 1px solid #cecece;">
+        </textarea>      
+        <br>
+        
+        <button type="submit" class= "button button1">SUBMIT</button> 
+        <button type="reset" class= "button button1">RESET</button>
+        
+</form>
+
+</div>
+
+</body>
+</html>
