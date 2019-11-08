@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS grid Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS Grid -->
+<style>
+.wrapper {
+    width: 100%;
+  display: grid;
+  grid-template-columns: 180px 180px 180px 180px;
+  grid-gap: 8px;
+  grid-auto-rows: minmax(70px, auto);
+}
+.one {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  background-color: #565554;
+  color:white;
+  padding: 10px;
+  border-radius: 0.3rem;
+}
+.three { 
+  grid-column: 3 / -1;
+  grid-row: 2/ 3;
+  background-color: #565554;
+  color:white;
+  padding: 10px;
+  border-radius: 0.3rem;
+}
+.two {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  background-color:#565554;
+  color:white;
+  padding: 10px;
+  border-radius: 0.3rem;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+  background-color: #565554;
+  color:white;
+  padding: 10px;
+  border-radius: 0.3rem;
+}
+.five {
+  grid-column: 4/-1;
+  grid-row: 3;
+  background-color: #565554;
+  color:white;
+  padding: 10px;
+  border-radius: 0.3rem;
+}
+
+</style>
+</head>
+<body>
+
+        <div class="wrapper">
+                <div class="one">One</div>
+                <div class="three">Three</div>
+                <div class="two">Two</div>
+                <div class="four">Four</div>
+                <div class="five">Five</div>
+               
+              </div>
+
+</body>
+</html>
