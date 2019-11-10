@@ -35,20 +35,31 @@
         <form action= "">
                 <div class="form-group">
                   <label for="Inputname">Name</label>
-                  <input type="name" class="form-control">
+                  <input id= "fname" type="name" class="form-control">
                 </div>
                 <div class="form-group">
                   <label for="InputEmail">Email</label>
-                  <input type="email" class="form-control">
+                  <input id="emailId" type="email" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="Textarea1">Comment</label>
-                    <textarea class="form-control"  rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                        <label for="Textarea1">Comment</label>
+                        <textarea id= "message" class="form-control"  rows="3"></textarea>
+                      </div>
+                <button type="submit" class="btn btn-primary" onclick="displayInfo(event)">Submit</button>
                 <button type="reset" class="btn btn-primary1">Reset</button>
               </form>
     </div>  
-          
+    <script>
+      function displayInfo(event)
+      {
+        event.preventDefault();
+        var d1= document.getElementById("fname").value;
+        var d2= document.getElementById("emailId").value;
+        var d3= document.getElementById("message").value;
+        console.log("Name: " +d1);
+        console.log("Email: " +d2);
+        console.log("Message: " +d3);
+      }
+    </script>        
 </body>
 </html>
