@@ -32,22 +32,22 @@
 <body>
     <div class="container">
             <p class="h4 mb-4 font-weight-bold">CONTACT US</p>
-        <form action= "">
+        <form>
                 <div class="form-group">
-                  <label for="Inputname">Name</label>
-                  <input id= "fname" type="name" class="form-control">
+                  <label>Name</label>
+                  <input id= "fname" type="text" class="form-control">
                 </div>
                 <div class="form-group">
-                  <label for="InputEmail">Email</label>
-                  <input id="emailId" type="email" class="form-control">
+                  <label>Email</label>
+                  <input id="emailId" type="text" class="form-control">
                 </div>
                 <div class="form-group">
-                        <label for="Textarea1">Comment</label>
-                        <textarea id= "message" class="form-control"  rows="3"></textarea>
-                      </div>
+                    <label>Comment</label>
+                    <textarea id= "message" class="form-control"  rows="3"></textarea>
+                </div>
                 <button type="submit" class="btn btn-primary" onclick="displayInfo(event)">Submit</button>
                 <button type="reset" class="btn btn-primary1">Reset</button>
-              </form>
+        </form>
     </div>  
     <script>
       function displayInfo(event)
@@ -56,10 +56,10 @@
         var d1= document.getElementById("fname").value;
         var d2= document.getElementById("emailId").value;
         var d3= document.getElementById("message").value;
-        console.log("Name: " +d1);
-        console.log("Email: " +d2);
-        console.log("Message: " +d3);
-      }
+        console.log('Name: '+d1+ '\n' + 
+                    'EmailID: '+d2+ '\n' + 
+                    'Message: '+d3);
+              }
     </script>        
 </body>
 </html>
