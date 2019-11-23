@@ -36,47 +36,73 @@ A layout designed using floats.
 
 ## Assignment#4
 ### Exercise#1: 
-A simple FizzBuzz example implemented using javascript.The program used For loop to iterate over numbers from 1 to 100. The For loop implements if else conditions for the iterations: for all the numbers divisible by 3 and 5,it displays "fizzbuzz", for all the numbers divisible by 3 it displays "fizz", for all the numbers divisible by 5 it displays "buss", while for rest of the iterations the number itself gets printed.All the outputs are displayed in console window.The implementation is done inside script tag within HTML.
+A simple FizzBuzz example implemented using javascript.The program used For loop to iterate over numbers from 1 to 100. The For loop implements if else conditions for the iterations: for all the numbers divisible by 3 and 5,it displays "fizzbuzz", for all the numbers divisible by 3 it displays "fizz", for all the numbers divisible by 5 it displays "buzz", while for rest of the iterations the number itself gets printed.All the outputs are displayed in console window.The implementation is done inside script tag within HTML.
 ### Exercise#2: 
 A javascript implementation to reverse the numbers in a digit and print the reversed digit in the console.The script tag inside HTML code contains a function "reverse_digits" which takes the number (231756) as an argument. Inside the function the number (which is an integer) is converted into string using toString() method and the methods: split(""), reverse(), join("") are used consecutively on the resulted string which returns the output as the reversed digit.
 ### Exercise#3: 
-An HTML form styled with bootstrap, takes the input and displays the output in console using javascript.Form has two buttons: "submit" button has Onclick() event attached to it, which submits the output on being clicked, "reset" button resets the input fields in the form. Function display_info() is written in javascript inside script tag within HTML body, which outputs the result in console using input's id.
+An HTML form styled with bootstrap, takes the input and displays the output in console using javascript.Form has two buttons: "submit" button has Onclick() event handler attached to it, which submits the output on being clicked, "reset" button resets the input fields in the form. Function display_info() is written in javascript inside script tag within HTML body, which outputs the result in console. The values of input are taken using document.getelementbyId("id").value which takes the id of input as argument and then these values are displayed using console.log().
 ### Exercise#4: 
-This exercise is implemented using javascript within script tag inside HTML body. It displays the width and height of the window every time the size of the window changes.The body tag has onload and onresize event attached to it, which calls the function getSize(), every time the window resizes and the current width and height of the window is displayed inside two div tags in HTML.
+This exercise is implemented using javascript within script tag inside HTML body. It displays the width and height of the window every time the size of the window changes.The body tag has onload and onresize event handlers attached to it, which calls the function getSize(), every time the window resizes and the current width and height of the window is displayed inside two div tags in HTML.The current values of height and width is passed to HTML div tags using ids and by using document.getElementById('id').innerHTML in javascript.
 ### Exercise#5: 
-The program implements a button with the help of javascript displayed within HTML to change the background color of the window, every time on being clicked.The  button has Onclick event, which calls the function changecolor() on being clicked.The function uses Math.floor() and Math.random() functions consecutively to generate the random hexadecimal numbers, which is concatenated with "#" to generate a color and set the background to that color.
+The program implements a button with the help of javascript displayed within HTML to change the background color of the window, every time on being clicked.The  button has Onclick event handler, which calls the function changecolor() on being clicked.The function uses Math.floor() and Math.random() functions consecutively to generate the random hexadecimal numbers, which is concatenated with "#" to generate a color and set the background to that color using document.body.style.backgroundColor.
 
 ## Assignment#5: 
-It has four files: index.html, app.js, package.json, package-lock.json.The index.html is a form styled with bootstrap, it takes the input from user and send to the server.Form tag uses the method "post". The app.js file, implements the server using express to handle the route given in the form and display the the output on a webpage. Body-parser is used as a middleware to parse the incoming request bodies. app.get function in the file sends the HTML to the browser to take the input. app.post function displays the user input on the webpage.In order to format the displayed output, I have written HTML styled with CSS inside res.write() method. The server port 
+It has four files: index.html, app.js, package.json, package-lock.json.The index.html is a form styled with bootstrap, it takes the input from user and send to the server.Form tag uses the method "post". 
+
+The app.js file, implements the server using express to handle the route given in the form and display the the output on a webpage. Body-parser is used as a middleware to parse the incoming request bodies.The app.get function in the file sends the HTML to the browser to take the input. app.post function displays the user input on the webpage. In order to format the displayed output, I have written HTML styled with CSS inside res.write() method in app.js file. The server port 
 listening to the event is 8080.
 
 
 ## Assignment#6: 
 There are three folders inside this folder: AngularTutorial, ReactTutorial and TSTutorial(typescript).
+
 	      Completed tutorial for React and codelabs for Angular and Typescript. 
 	      Implemented tic-tac-toe game following the steps mentioned in react tutorial. The coding has been done in browser in 	               codepen.The link to the tutorial is as follows:
 	      (https://reactjs.org/tutorial/tutorial.html)
+	      
 	      Created an angular app following the below codelab:
 	      (https://codelab.fun/angular/create-first-app/intro)
+	      
 	      Installed the angular CLI with npm (as I have already installed node js and npm in my system)
+	      
 	      npm install -g @angular/cli
+	      
 	      After the completion of installation, created a new project my-app
+	      
 	      ng new my-app
+	      
 	      Navigating to the newly created folder (my-app) and running the below command, starts the web server and opens the                       application in a browser
+	      
 	      cd my-app
+	      
 	      ng serve
+	      
 	      Done the changes in the code in the following file inside the src folder created under my-app:
+	      
               index.html
+	      
               main.ts
+	      
               app.component.ts
+	      
               app.module.ts
+	      
               Created a web app following the typescript intro codelab:
+	      
 	      (https://angular-presentation.firebaseapp.com/angular/typescript/intro)
+	      
               Installed the typescript globally on my machine following the below command:
+	      
               npm install -g typescript
+	      
               Repeated the same steps as done for Angular tutorial and replaced the code for the main.ts and created the below files:
+	      
               Guest.ts
+	      
               Codelab.ts
-              Restarted the server using ng server and the output can be seen in the browser on the link: http://localhost:4200
+	      
+              Restarted the server using ng server and the output can be seen in the browser on the link: 
+	      
+	      http://localhost:4200
               
 	     
