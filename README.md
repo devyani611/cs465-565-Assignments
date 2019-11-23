@@ -17,7 +17,7 @@ A website using HTML and CSS to loosely match the website http://placekitten.com
 A start of portfolio styled with CSS used as internal and inline.It contains three links for Home, About and Contact directing to three different HTML pages.About page has my name and a brief bio, contact page has three image links redirecting to my github, linkedin and stack overflow page. The links on every page has hover and focus pseudo classes attached to them.
 
 ## Assignment#3
-### CSS Folder: 
+### CSS Sub-folder: 
 It contains compiled bootstrap file, used in some exercises for this assignment.
 ### Exercise#1: 
 A simple HTML form with two input tags for name and email and a textarea tag for writing comments/message along with two buttons: submit and reset.The form is styled using bootstrap.Classes like .container, .btn-primary1 and .h4 are overwritten in style tag.
@@ -54,7 +54,7 @@ listening to the event is 8080.
 
 
 ## Assignment#6: 
-There are three folders inside this folder: AngularTutorial, ReactTutorial and TSTutorial(typescript).
+There are three sub-folders inside this folder: AngularTutorial, ReactTutorial and TSTutorial(typescript).
 
 	      Completed tutorial for React and codelabs for Angular and Typescript. 
 	      Implemented tic-tac-toe game following the steps mentioned in react tutorial. The coding has been done in browser in 	               codepen.The link to the tutorial is as follows:
