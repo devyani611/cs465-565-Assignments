@@ -52,7 +52,7 @@ listening to the event is 8080.
 
 
 ## Assignment#6: 
-There are three folders inside this folder: AngularTutorial, ReactTutorial and TypescriptTutorial.
+There are three folders inside this folder: AngularTutorial, ReactTutorial and TSTutorial(typescript).
 	      Completed tutorial for React and codelabs for Angular and Typescript. 
 	      Implemented tic-tac-toe game following the steps mentioned in react tutorial. The coding has been done in browser in 	               codepen.The link to the tutorial is as follows:
 	      (https://reactjs.org/tutorial/tutorial.html)
